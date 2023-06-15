@@ -17,4 +17,4 @@ important. Thus it is more suitable than F-1 score, precision and recall.
 
 In order to predict the rationality, the features we use are all derived from the data in the game, not after the game (such as MVP, SVP 
 attribution, etc.), and the Features we focus on are neutral resources (dragons, elders , heralds, barons, etc.) and team gaps (vision 
-score gap, damage per minutes, gold gap, etc.)
+score gap, damage per minute, gold gap, etc.)
