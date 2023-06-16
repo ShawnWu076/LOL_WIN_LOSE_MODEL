@@ -76,6 +76,43 @@ they are rare in all matchups. In addition, we also passed **team kpm**(kill per
 minute), and **dpm**( team damage per minute) to analyze the overall performance of the team, which can be used to predict the victory of the game.
 
 
+---
+## **Fairness Analysis**
+
+### Fairness group choice
+
+Do groups with high dpm (Damage per minute) have different predictions from the ones with low dpm?
+
+### Divide the groups
+
+The mean of dpm is around 1900; thus, we consider dpm <= 1900 low dpm; oppositely, dpm > 1900 high dpm.
+
+Here is the False Negative Rate by brackets of dpm:
+
+<iframe src="assets/false.html" width=800 height=600 frameBorder=0></iframe>
+
+### Null Hypothesis
+
+The classifier's accuracy is the same for both low dpm and high dpm, and any differences are due to chance
+
+### Alternative hypothesis
+
+The classifier's accuracy is higher for high dpm.
+
+### Test Statistic
+
+Difference in accuracy (low dpm minus high dpm).
+
+### Significance level
+
+0.01
+
+### Permutation
+
+<iframe src="assets/perm.html" width=800 height=600 frameBorder=0></iframe>
+
+#### Based on our test statistics, p-value of 0.58, and this graph, the difference in accuracy across the two groups seems significant.
+#### Therefore, we fail to reject our null hypothesis and claim that high dpm and low dpm might have the same accuracy.
 
 
 
