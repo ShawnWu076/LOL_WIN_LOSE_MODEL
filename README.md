@@ -36,6 +36,8 @@ We encode **side** by OneHotEncoder() while other features remain the same since
 
 ### **Conclusion based on Baseline Model**
 
+We've reach accuracy of around 0.85, which is reasonably a good performance. We believe this is good model not only because relatively high accuracy 
+but also intuitively, the more neutral resources also means giving heroes more buffs and more gold. And these can better strengthen heroes, making them easier to win in team battles.
 
 
 
