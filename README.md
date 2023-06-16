@@ -4,7 +4,7 @@ by Shuang Wu (shw076@ucsd.edu) , Yacheng Xiao (yaxiao@ucsd.edu)
 
 ---
 
-## **Introduction**
+## **Introduction and Problem Identification**
 
 ### "Win or Not Win, That's a Question" 
 In the game, players always work hard for various important resources, but which elements are the key to victory of the game？
