@@ -79,14 +79,6 @@ minute), and **dpm**( team damage per minute) to analyze the overall performance
 
 We also have different expectations for teams. If we know that a strong team is t0, then we will probably predict that this team will win.
 
-### **Model Description**
-We chose Decision Tree Classifier. We define two hyperparameters maximum of the decision tree, and the minimum number of samples required to split. 
-We use the GridSearchCV function to select the best performance of hyperparameters which is the maximum of the decision tree of 4 and the least 5 of 
-samples required to split. Our final model is improved not only because our **accuracy reached about 98%** but also adding some reasonable features 
-to the final model. We came up with a new feature, **team dpm**, using team death divided by game length. Then we encode the OneHotEncoder() on each 
-nominal feature (team, etc.) and StandardScaler() on continuous quantitative features(team kpm, dpm, etc.). Furthermore, the optimization of 
-hyperparameters potentially captures more complex relationships in the data, Thus enhancing the predictions.
-
 ### Hyperparameters
 
 The above features might be redundant or misleading, and we examines our features to decide which ones to use.
@@ -103,7 +95,7 @@ Here is a visual representation of team name vs result:
 
 We can observe that different teams do show a relationship with result. 
 
-Below are visual representation of 'doublekills', 'triplekills','quadrakills', 'pentakills','dragons', 'elders', 'barons', 'towers', 'turretplates', 'inhibitors', 'team kpm', 'dpm', 'vspm', 'golddiffat10', 'xpdiffat10','golddiffat15', 'xpdiffat15', 'team dpm' features:
+#### Below are visual representation of 'doublekills', 'triplekills','quadrakills', 'pentakills','dragons', 'elders', 'barons', 'towers', 'turretplates', 'inhibitors', 'team kpm', 'dpm', 'vspm', 'golddiffat10', 'xpdiffat10','golddiffat15', 'xpdiffat15', 'team dpm' features:
 
 <iframe src="assets/fig0.html" width=400 height=300 frameBorder=0></iframe>
 <iframe src="assets/fig1.html" width=400 height=300 frameBorder=0></iframe>
@@ -126,7 +118,7 @@ Below are visual representation of 'doublekills', 'triplekills','quadrakills', '
 
 Based on the differences, we can observe that "quadrakills", "pentakills", and "elders" do not have enough data to show a relationship, and we do not include them
 
-Below are visual representations of 'firstdragon', 'firstbaron', 'firstblood', 'firsttothreetowers', 'firsttower', 'firstherald':
+#### Below are visual representations of 'firstdragon', 'firstbaron', 'firstblood', 'firsttothreetowers', 'firsttower', 'firstherald':
 
 <iframe src="assets/fig100.html" width=400 height=300 frameBorder=0></iframe>
 <iframe src="assets/fig101.html" width=400 height=300 frameBorder=0></iframe>
@@ -134,6 +126,14 @@ Below are visual representations of 'firstdragon', 'firstbaron', 'firstblood', '
 <iframe src="assets/fig103.html" width=400 height=300 frameBorder=0></iframe>
 <iframe src="assets/fig104.html" width=400 height=300 frameBorder=0></iframe>
 <iframe src="assets/fig105.html" width=400 height=300 frameBorder=0></iframe>
+
+### **Model Description**
+We chose Decision Tree Classifier. We define two hyperparameters maximum of the decision tree, and the minimum number of samples required to split. 
+We use the GridSearchCV function to select the best performance of hyperparameters which is the maximum of the decision tree of 4 and the least 5 of 
+samples required to split. Our final model is improved not only because our **accuracy reached about 98%** but also adding some reasonable features 
+to the final model. We came up with a new feature, **team dpm**, using team death divided by game length. Then we encode the OneHotEncoder() on each 
+nominal feature (team, etc.) and StandardScaler() on continuous quantitative features(team kpm, dpm, etc.). Furthermore, the optimization of 
+hyperparameters potentially captures more complex relationships in the data, Thus enhancing the predictions.
 ---
 ## **Fairness Analysis**
 
