@@ -128,12 +128,15 @@ Based on the differences, we can observe that "quadrakills", "pentakills", and "
 <iframe src="assets/fig105.html" width=400 height=300 frameBorder=0></iframe>
 
 ### **Model Description**
+
 We chose Decision Tree Classifier. We define two hyperparameters maximum of the decision tree, and the minimum number of samples required to split. 
 We use the GridSearchCV function to select the best performance of hyperparameters which is the maximum of the decision tree of 4 and the least 10 
 of samples required to split. Our final model is improved not only because our **accuracy reached about 98%** but also adding some reasonable 
 features to the final model. We came up with a new feature, **team dpm**, using team death divided by game length. Then we encode the 
 OneHotEncoder() on each nominal feature (team, etc.) and StandardScaler() on continuous quantitative features(team kpm, dpm, etc.). Furthermore, the 
 optimization of hyperparameters potentially captures more complex relationships in the data, Thus enhancing the predictions.
+
+
 ---
 ## **Fairness Analysis**
 
