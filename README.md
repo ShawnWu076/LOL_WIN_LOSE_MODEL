@@ -44,7 +44,7 @@ them easier to win in team battles.
 ## **Final Model**
 
 New Features We Add Base on Baseline Model: doublekills, triplekills, quadrakills, firstblood, team kpm, firsttower, towers, firsttothreetowers, 
-turretplates, inhibitors, dpm, vspm, golddiffat10, xpdiffat10, golddiffat15, xpdiffat15
+turretplates, inhibitors, dpm, vspm, golddiffat10, xpdiffat10, golddiffat15, xpdiffat15, team, team dpm
 
 **Gold** and **experience** are the keys to snowballing and winning in League of Legends. Because gold allows heroes to buy more items, the 
 experience can strengthen the champion's skills, passive, health, etc., improving the champion's ability to fight against opponents.
@@ -75,6 +75,9 @@ The trend of victory in team battles can be seen from **double kills**, **triple
 they are rare in all matchups. In addition, we also passed **team kpm**(kill per minute), **team dpm**(death per minute), **vspm**(visual score per 
 minute), and **dpm**( team damage per minute) to analyze the overall performance of the team, which can be used to predict the victory of the game.
 
+### **Team Diff**
+
+We also have different expectations for teams. If we know that a strong team is t0, then we will probably predict that this team will win.
 
 ---
 ## **Fairness Analysis**
