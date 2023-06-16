@@ -31,6 +31,12 @@ In our Baseline model, we intend to predict whether the team wins or not based o
 
 **Response Variable**: Result(Win(1)/Lose(0))
 
+We encode **side** by OneHotEncoder() while other features remain the same since for other nominal features, there's already exist as 1(have) or 
+0(not have). For quantitative features, are all of them are discrete values.
+
+### **Conclusion based on Baseline Model**
+
+
 
 
 
