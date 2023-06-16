@@ -58,7 +58,7 @@ In addition to neutral resources, there are other things that can track the play
 reflected in **gold diff**, **xp diff** at different time, **first blood**(100 bonus gold), **first tower**(150 bonus gold), **turret plates**(175 
 bonus gold for each plates, 875 for each tower). 
 
-### **Team performance**
+### **Importance of Turret**
 
 The game's victory comes from dismantling the Nexus on the opposite side. However, if the team wants to destroy the Nexus on the opposite side, it 
 must destroy the turret and inhibitors on the opposite side. If one side destroys 0 inhibitors in a game, we can be sure that the team loses
