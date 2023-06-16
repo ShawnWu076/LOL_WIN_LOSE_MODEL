@@ -37,7 +37,40 @@ We encode **side** by OneHotEncoder() while other features remain the same since
 ### **Conclusion based on Baseline Model**
 
 We've reach accuracy of around 0.85, which is reasonably a good performance. We believe this is good model not only because relatively high accuracy 
-but also intuitively, the more neutral resources also means giving heroes more buffs and more gold. And these can better strengthen heroes, making them easier to win in team battles.
+but also intuitively, the more neutral resources also means giving heroes more buffs and more gold. And these can better strengthen heroes, making 
+them easier to win in team battles.
+
+---
+## **Final Model**
+
+**Gold** and **experience** are the keys to snowballing and winning in League of Legends. Because gold allows heroes to buy more items, the 
+experience can strengthen the champion's skills, passive, health, etc., improving the champion's ability to fight against opponents.
+
+### **What we have in baseline**
+
+Neutral resources (variables in the Baseline Model) make sense because it immediately gives each champion a portion of gold and a temporary 
+boost to almost all stats. This enhancement allows heroes to buy items with gold while their attributes increase, which will also improve their 
+ability to fight against the opposing heroes or team fight to be close to the game's victory.
+
+### **Gold XP Status**
+
+In addition to neutral resources, there are other things that can track the player's gold and experience status. And these can be intuitively
+reflected in **gold diff**, **xp diff** at different time, **first blood**(100 bonus gold), **first tower**(150 bonus gold), **turret plates**(175 
+bonus gold for each plates, 875 for each tower). 
+
+### **Team performance**
+
+The game's victory comes from dismantling the Nexus on the opposite side. However, if the team wants to destroy the Nexus on the opposite side, it 
+must destroy the turret and inhibitors on the opposite side. If one side destroys 0 inhibitors in a game, we can be sure that the team loses \
+(because the opponent's Nexus is invincible if the opponent's inhibitor is not destroyed). Therefore, the number of demolished towers and inhibitors 
+is also important to the game's victory, so we added **towers**, **inhibitors**, and **first three towers** to predict whether a team will win.
+
+
+
+
+
+
+
 
 
 
