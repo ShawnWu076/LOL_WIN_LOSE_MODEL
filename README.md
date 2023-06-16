@@ -65,6 +65,8 @@ must destroy the turret and inhibitors on the opposite side. If one side destroy
 (because the opponent's Nexus is invincible if the opponent's inhibitor is not destroyed). Therefore, the number of demolished towers and inhibitors 
 is also important to the game's victory, so we added **towers**, **inhibitors**, and **first three towers** to predict whether a team will win.
 
+### **Team Performance**
+
 
 
 
