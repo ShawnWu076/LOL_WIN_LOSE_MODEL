@@ -87,6 +87,53 @@ to the final model. We came up with a new feature, **team dpm**, using team deat
 nominal feature (team, etc.) and StandardScaler() on continuous quantitative features(team kpm, dpm, etc.). Furthermore, the optimization of 
 hyperparameters potentially captures more complex relationships in the data, Thus enhancing the predictions.
 
+### Hyperparameters
+
+The above features might be redundant or misleading, and we examines our features to decide which ones to use.
+
+Here is a visual representation of side vs result:
+
+<iframe src="assets/side.html" width=800 height=600 frameBorder=0></iframe>
+
+We can observe that side does not influence result significantly. We do not include "side" in our features.
+
+Here is a visual representation of team name vs result:
+
+<iframe src="assets/team.html" width=800 height=600 frameBorder=0></iframe>
+
+We can observe that different teams do show a relationship with result. 
+
+Below are visual representation of 'doublekills', 'triplekills','quadrakills', 'pentakills','dragons', 'elders', 'barons', 'towers', 'turretplates', 'inhibitors', 'team kpm', 'dpm', 'vspm', 'golddiffat10', 'xpdiffat10','golddiffat15', 'xpdiffat15', 'team dpm' features:
+
+<iframe src="assets/fig0.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig1.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig2.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig3.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig4.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig5.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig6.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig7.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig8.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig9.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig10.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig11.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig12.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig13.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig14.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig15.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig16.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig17.html" width=400 height=300 frameBorder=0></iframe>
+
+Based on the differences, we can observe that "quadrakills", "pentakills", and "elders" do not have enough data to show a relationship, and we do not include them
+
+Below are visual representations of 'firstdragon', 'firstbaron', 'firstblood', 'firsttothreetowers', 'firsttower', 'firstherald':
+
+<iframe src="assets/fig100.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig101.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig102.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig103.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig104.html" width=400 height=300 frameBorder=0></iframe>
+<iframe src="assets/fig105.html" width=400 height=300 frameBorder=0></iframe>
 ---
 ## **Fairness Analysis**
 
