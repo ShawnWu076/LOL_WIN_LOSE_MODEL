@@ -12,8 +12,8 @@ In short, we will use the data to predict whether a team will win.
 
 
 In this model, we selected one of the most competitive leagues, the **2022 LCK game**, to predict the result. Since our predictions are mainly focus on win or loss, and there won't be the case of two teams are draw, we will use **Binary Classification** with the response variable 
-**Result(win or lose)**. The **Accuracy** will be the most suitable metric in predicting the result since the data set are balanced: 
-There's an equal amount of win and lose, and we will treat both FP(False Positive) and FN(False Negative) as equally important. Thus it is more 
+**Result (win or lose)**. The **Accuracy** will be the most suitable metric in predicting the result since the data set are balanced: 
+There's an equal amount of win and lose, and we will treat both FP (False Positive) and FN (False Negative) as equally important. Thus it is more 
 suitable than the F-1 score, precision, and recall. 
 
 To make predict rational, the features we use are all derived from the data in the game, not after the game (such as MVP, SVP 
@@ -27,9 +27,9 @@ In our Baseline model, we intend to predict whether the team wins or not based o
 
 **Quantitative Features**: Dragons, Barons, Heralds, Elders,
 
-**Nominal Features**: Side(blue/red), First dragon(1/0), First baron(1/0), First herald(1/0)
+**Nominal Features**: Side (blue/red), First dragon (1/0), First baron (1/0), First herald (1/0)
 
-**Response Variable**: Result(Win(1)/Lose(0))
+**Response Variable**: Result (Win(1) / Lose (0))
 
 We encode **side** by OneHotEncoder() while other features remain the same since for other nominal features, there's already exist as 1(have) or 
 0(not have). For quantitative features, are all of them are discrete values.
