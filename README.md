@@ -43,8 +43,8 @@ them easier to win in team battles.
 ---
 ## **Final Model**
 
-New Features We Add Base on Baseline Model: doublekills, triplekills, quadrakills, firstblood, team kpm, firsttower, towers, firsttothreetowers, 
-turretplates, inhibitors, dpm, vspm, golddiffat10, xpdiffat10, golddiffat15, xpdiffat15, team, team dpm
+**New Features We Add Base on Baseline Model**: doublekills, triplekills, quadrakills, firstblood, team kpm, firsttower, towers, 
+firsttothreetowers, turretplates, inhibitors, dpm, vspm, golddiffat10, xpdiffat10, golddiffat15, xpdiffat15, team, team dpm
 
 **Gold** and **experience** are the keys to snowballing and winning in League of Legends. Because gold allows heroes to buy more items, the 
 experience can strengthen the champion's skills, passive, health, etc., improving the champion's ability to fight against opponents.
