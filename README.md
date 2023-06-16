@@ -147,7 +147,7 @@ The mean of dpm is around 1900; thus, we consider dpm <= 1900 low dpm; oppositel
 
 Here is the False Negative Rate by brackets of dpm:
 
-<iframe src="assets/false.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/false2.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Null Hypothesis
 
@@ -167,9 +167,9 @@ Difference in accuracy (low dpm minus high dpm).
 
 ### Permutation
 
-<iframe src="assets/perm.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/perm2.html" width=800 height=600 frameBorder=0></iframe>
 
-#### Based on our test statistics, p-value of 0.58, and this graph, the difference in accuracy across the two groups seems significant.
+#### Based on our test statistics, p-value of 0.28, and this graph, the difference in accuracy across the two groups seems significant.
 #### Therefore, we fail to reject our null hypothesis and claim that high dpm and low dpm might have the same accuracy.
 
 
