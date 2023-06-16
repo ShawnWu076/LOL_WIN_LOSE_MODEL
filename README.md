@@ -8,6 +8,7 @@ by Shuang Wu (shw076@ucsd.edu) , Yacheng Xiao (yaxiao@ucsd.edu)
 
 ### "Win or Not Win, That's a Question" 
 In the game, players always work hard for various important resources, but which elements are the key to the victory of the game？
+In short, we will use known data to predict whether a team will win or not.
 
 
 In this model, we selected the one of the most competitive leagues, the **2022 LCK game** to predict result. Since our prediction are 
@@ -25,11 +26,13 @@ score gap, damage per minute, gold gap, etc.)
 ## **Baseline Model**
 In our Baseline model, we intend to predict whether the team wins or not based on the team's side and control of neutral resources.
 
-Quantitative Features: Dragons, Barons, Heralds, Elders,
+**Quantitative Features**: Dragons, Barons, Heralds, Elders,
 
-Nominal Features: Side(blue/red), First dragon(1/0), First baron(1/0), First herald(1/0)
+**Nominal Features**: Side(blue/red), First dragon(1/0), First baron(1/0), First herald(1/0)
 
-Response Variable: Result(Win(1)/Lose(0))
+**Response Variable**: Result(Win(1)/Lose(0))
+
+
 
 
 
