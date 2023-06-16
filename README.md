@@ -67,7 +67,13 @@ is also important to the game's victory, so we added **towers**, **inhibitors**,
 
 ### **Team Performance**
 
+The team's contribution also plays a vital role in the game's victory. If one side dies a lot in a short period, the team battle is basically lost. 
+The trend of victory in team battles can be seen from **double kills**, **triple kills**. We didn't choose quadra kills and **pentakills** because 
+they are rare in all matchups. In addition, we also passed **team kpm**(kill per minute), **team dpm**(death per minute), **vspm**(visual score per 
+minute), and **dpm**( team damage per minute) to analyze the overall performance of the team, which can be used to predict the victory of the game.
 
+New Features We Add Base on Baseline Model: doublekills, triplekills, quadrakills, firstblood, team kpm, 'firsttower', 'towers', 
+'firsttothreetowers', 'turretplates', 'inhibitors', 'dpm', 'vspm', 'golddiffat10', 'xpdiffat10', 'golddiffat15', 'xpdiffat15'
 
 
 
